@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+          href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Roboto:300,400,500&display=swap"
+          rel="stylesheet"
+  />
+  <meta
+          name="description"
+          content="Web site created using create-react-app"
+  />
+
+  <title>30 Days Of React App</title>
+  <style>
+    /* == General style === */
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    html,
+    body {
+      height: auto;
+      line-height: 1.5;
+      font-family: 'Montserrat';
+      font-weight: 300;
+      color: black;
+      overflow-x: hidden;
+    }
+
+    .root {
+      min-height: 100%;
+      position: relative;
+    }
+
+    .header-wrapper,
+    .main-wrapper,
+    .footer-wrapper {
+      width: 85%;
+      margin: auto;
+    }
+
+    .header-wrapper,
+    .main-wrapper{
+      padding: 10px;
+      margin: 2px auto;
+    }
+
+    h1 {
+      font-size: 70px;
+      font-weight: 300;
+    }
+
+    h2,
+    h3 {
+      font-weight: 300;
+    }
+
+    header {
+      background-color: #61dbfb;
+      padding: 10px;
+    }
+
+    main {
+        padding: 10px 10px 60px;
+        /* Height of the footer */
+      margin-top: 5px;
+    }
+
+    ul {
+      margin-left: 15px;
+    }
+
+    ul li {
+      list-style: none;
+      display: inline;
+      background-color: #61dbfb;
+      border: thin solid darkseagreen;
+      border-radius: 5px;
+      margin-left: 10px;
+    }
+
+    footer {
+      width: 100%;
+      height: 60px;
+      /* Height of the footer */
+      background: #6cf;
+    }
+
+    .footer-wrapper {
+      font-weight: 400;
+      text-align: center;
+      line-height: 60px;
+      margin-top: 5px;
+    }
+
+    .footer-input {
+      font-size: 1rem;
+      border: solid black 2px;
+      border-radius: 15px;
+      margin-left: 1px;
+      background-color: lightgray;
+      opacity: 80%;
+      text-align: center;
+    }
+
+    .btn {
+      font-size: 2rem;
+      border: solid black 2px;
+      border-radius: 15px;
+      text-align: center;
+      background-color: indianred;
+    }
+
+    .img{
+      border-radius: 100%;
+    }
+
+    .grid {
+      overflow: hidden;
+      text-align: center;
+      font-size: 20px;
+      padding: 40px;
+      font-weight: bold;
+    }
+
+    table {
+      table-layout: fixed;
+      width: 940px;
+      border-collapse: collapse;
+      border: 3px solid purple;
+    }
+
+    thead th:nth-child(1) {
+      width: 160px;
+    }
+
+    thead th:nth-child(2) {
+      width: 600px;
+    }
+
+    thead th:nth-child(3) {
+      width: 160px;
+    }
+
+    th, td {
+      font-weight: bold;
+    }
+
+    .progress-bar {
+      background-color: transparent;
+      height: 15px;
+      padding: 5px;
+      width: 100%;
+      margin: 50px 0;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+
+    }
+
+    .progress-bar span {
+      background-color: orange;
+      display: inline-block;
+      height: 100%;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+      -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+      box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+      -webkit-transition: width .4s ease-in-out;
+      -moz-transition: width .4s ease-in-out;
+      -ms-transition: width .4s ease-in-out;
+      -o-transition: width .4s ease-in-out;
+      transition: width .4s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+<div id="root"></div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+.header {
+  text-align: center;
+  background: #f1f1f1;
+  color: orange;
+  padding: 25px;
+  margin: 0;
+  border: 5px solid #e7e7e7;
+  font-family: "Arial Black";
+}
+
+.headerWrapper {
+  font-size: xx-large;
+}
+
+.headerWrapper > h6 {
+  color: #5a5a5a;
+  font-weight: normal;
+}
+
+.mainCard {
+  height: 100%;
+  border: lightgray solid;
+  text-align: center;
+  overflow: hidden;
+  background: #e8f6f6;
+  color: #5a5a5a;
+}
+
+.img {
+  max-width: 100%;
+  width: 85%;
+  padding-top: 20px;
+}
+
+.item {
+  margin: auto;
+}
+
+.search{
+  padding-top: 5px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: #e7e7e7;
+  border-radius: 20px;
+  border: transparent;
+  width: 60%;
+  line-height: 50px;
+  opacity: 50%;
+  overflow: hidden;
+}
+
+input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: orange;
+  font-size: x-large;
+  margin-left: 30px;
+}
+*:focus {
+  outline: none;
+}
+
+.newCount {
+  color: orange!important;
+  font-size: large;
+  font-style: italic;
+}
+
+.footer {
+  height: fit-content;
+  text-align: center;
+  background: #f1f1f1;
+  color: black;
+  padding: 25px;
+  margin: 0;
+  border: 5px solid #e7e7e7;
+  font-family: "Arial Black";
+}
+
+.arrow {
+  font-size:xxx-large;
+  text-align: right;
+}
+
+.buttonStyles  {
+  background: orange;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 3px;
+  cursor: pointer;
+  fontSize: 18;
+  color: white;
+  font-size:xx-large;
+}
