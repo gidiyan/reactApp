@@ -5,20 +5,16 @@ import Header from "./components/header/Header"
 import Footer from "./components/footer/Footer"
 import {FaChartBar} from "react-icons/fa"
 import Grid from '@material-ui/core/Grid'
-// import {keys} from "@material-ui/core/styles/createBreakpoints";
 
-const {header, headerWrapper, img, mainCard, search, newCount, arrow, buttonStyles} = mainStyle
-
+const {img, mainCard, arrow, buttonStyles} = mainStyle
 
 
 const SearchCountry = ({onChange}) => {
     return (
-        <div style={{paddingTop: '10px'}}>
-            <div className={search}>
-                <input className='text'
-                       type="text"
+        <div style={{paddingTop: '10px',backgroundColor:'#f1f1f1'}}>
+            <div className='search'>
+                <input type="text"
                        placeholder="Search countries by name, city and languages"
-                       style={{overflow: 'hidden'}}
                        onChange={onChange}
                 />
             </div>
@@ -36,10 +32,13 @@ const CountryCard = ({countries, onMouseOnHandler}) => {
             const formatLanguages = country.languages.map(({name}) => name).join(
                 ', ')
             return (
-                <Grid item xs={6} md={4} lg={3} xl={2} key={country.name}>
-                    <div id={'country ' + country.numericCode}
-                         className={'country ' + mainCard}
-                         onMouseEnter={onMouseOnHandler} onMouseLeave={onMouseOnHandler}>
+                <Grid item xs={6} md={4} lg={3} xl={2}
+                      key={country.name}
+                >
+                    <div className={'country ' + mainStyle.mainCard}
+                         id={'country ' + country.numericCode}
+                         onMouseOver={onMouseOnHandler} onMouseOut={onMouseOnHandler}
+                    >
                         <img src={country.flag} className={img}
                              alt={country.name}/>
                         <div>
@@ -97,9 +96,9 @@ const LanguageTable = ({countries}) => {
             const row = element[1] * 600 / max
             return (
                 <tr key={element[0]}>
-                    <td style={{textAlign:"center"}}>{element[0]}</td>
+                    <td style={{textAlign: "center"}}>{element[0]}</td>
                     <td className="progress-bar"><span style={{backgroundColor: "orange", width: row}}></span></td>
-                    <td  style={{textAlign:"center"}}>{element[1].toLocaleString("en-US")}</td>
+                    <td style={{textAlign: "center"}}>{element[1].toLocaleString("en-US")}</td>
                 </tr>
             )
         })
@@ -131,9 +130,9 @@ const countryParsing = (e, b) => {
     const row = 600 * e.population / max
     return (
         <tr key={e.name}>
-            <td style={{textAlign:"center"}}>{e.name}</td>
+            <td style={{textAlign: "center"}}>{e.name}</td>
             <td className="progress-bar"><span style={{backgroundColor: "orange", width: row}}></span></td>
-            <td style={{textAlign:"center"}}>{e.population.toLocaleString("en-US")}</td>
+            <td style={{textAlign: "center"}}>{e.population.toLocaleString("en-US")}</td>
         </tr>
     )
 }

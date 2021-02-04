@@ -5,14 +5,14 @@ import {
     TiSocialTwitterCircular,
 } from 'react-icons/ti'
 import { FaArrowAltCircleUp } from "react-icons/fa";
-import headerStyle from "../../styles/main.module.scss"
+import mainStyle from "../../styles/main.module.scss";
 
-const {footer, arrow} = headerStyle
+const {footer, arrow} = mainStyle
 
 class Footer extends Component {
     render() {
         return (
-            <footer className={footer}>
+            <footer className={mainStyle.footer}>
                 <h3>First React App</h3>
                 <div>
                     <TiSocialLinkedinCircular/>
@@ -22,10 +22,10 @@ class Footer extends Component {
                 <div>
                     <small> Copyright &copy; {new Date().getFullYear()} </small>
                     <small>
-                        Developed by <a href="" target="_blank">Hidiyan Eugene</a>
+                        Developed by <a href="https://github.com/gidiyan" target="_blank">Hidiyan Eugene</a>
                     </small>
                 </div>
-                <div className={arrow}>
+                <div className={mainStyle.arrow}>
                     <a href='#root'><FaArrowAltCircleUp color='orange'/></a>
                 </div>
 

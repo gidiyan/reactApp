@@ -4,7 +4,6 @@
   color: orange;
   padding: 25px;
   margin: 0;
-  border: 5px solid #e7e7e7;
   font-family: "Arial Black";
 }
 
@@ -36,30 +35,6 @@
   margin: auto;
 }
 
-.search{
-  padding-top: 5px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  background-color: #e7e7e7;
-  border-radius: 20px;
-  border: transparent;
-  width: 60%;
-  line-height: 50px;
-  opacity: 50%;
-  overflow: hidden;
-}
-
-input {
-  width: 100%;
-  border: none;
-  background: transparent;
-  color: orange;
-  font-size: x-large;
-  margin-left: 30px;
-}
 *:focus {
   outline: none;
 }

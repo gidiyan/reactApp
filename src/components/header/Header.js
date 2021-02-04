@@ -11,12 +11,12 @@ class Header extends Component {
         } = this.props
 
         return (
-            <div className={header}>
-                <div className={headerWrapper}>
+            <div className={headerStyles.header}>
+                <div className={headerStyles.headerWrapper}>
                     <h3>WORLD COUNTRIES DATA</h3>
                     <h6>Currently, we have {backUp.length} countries</h6>
                     <h6 id='newCount' style={{display: 'none'}}
-                        className={newCount}>
+                        className={headerStyles.newCount}>
                         {countries.length > 0 ? countries.length : 0}
                         {' '} satisfied the search
                         criteria
